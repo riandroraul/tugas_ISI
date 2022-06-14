@@ -136,21 +136,32 @@ function fibo(max){
 }
 
 function fibo2(max){
-    let n1 = 1, n2 = 2, next;
+    let nilai1 = 1, nilai2 = 2, next;
     let teks = ''
     for(let i = 1; i < max; i++){
             if(i == 1){
                 teks += i
                 console.log(teks)
             }
-        teks += n1
+        teks += nilai1
         console.log(teks)
-        next = n1 + n2;
-        n1 = n2
-        n2 = next
+        next = nilai1 + nilai2;
+        nilai1 = nilai2
+        nilai2 = next
     }
-    console.log(n2)
 }
+// function tes(){
+//     let nilai1 = 1, n2 = 2, next;
+//     for(let i = 0; i < 2; i++){
+//         // teks += nilai1
+//         console.log(n2)
+//         next = nilai1 + n2;
+//         nilai1 = n2
+//         n2 = next
+//     }
+// }
+
+// tes()
 fibo2(6)
 // fibo2(6)
 //console.log(cek([4,3,44444444,55555555,234444444444444, 89897778]))
