@@ -52,7 +52,6 @@ function tambahBintang(num, long){
     for(let j = 0; j < num.length; j++){
         let text = '';
         for(let i = 0; i < long - num[j].toString().length ; i++){
-        
             text += '*'
         }
         let arr = []
@@ -102,7 +101,7 @@ function bintangMenurun(max){
     }
 }
 
-bintangMenurun(4)
+// bintangMenurun(4)
 
 function bintangRataKanan(max){
     let teks = '';
@@ -122,9 +121,6 @@ function bintangRataKanan(max){
 
 function fibo(max){
     let teks = ''
-    let prev = 1
-    let next = 2
-    let hasil
     for(let i = 1; i < max; i++){
         if (i == 1){
             teks += i
@@ -149,14 +145,15 @@ function fibo2(max){
         nilai1 = nilai2
         nilai2 = next
     }
-    console.log(next)
+    // console.log(next)
 }
+
 // i == 1 < 6 true
 // cek i == 1 = true, concat teks dengan i cetak teks =  1
 // nilai1 = 1 concat string teks dengan nilai1 =         11
 // next = 3 nilai1 = 2 nilai2 = 3 
 // i == 2 < 6 true 
-// teks concat dengan nilai1 == 2 lalu    cetak teks     112
+// teks concat dengan nilai1 == 2 lalu cetak teks        112
 // next = 5 nilai1 = 3 nilai2 = 5
 // i == 3 < 6 true
 // teks concat dengan nilai1 = 3 lalu cetak teks         1123
@@ -169,18 +166,18 @@ function fibo2(max){
 // next = 21 nilai1 = 13,  nilai2 = 21
 // i == 6 < 6 false
 
-fibo2(6)
+fibo2(10)
 
-// function tes(){
-//     let nilai1 = 1, n2 = 2, next;
-//     for(let i = 0; i < 2; i++){
-//         // teks += nilai1
-//         console.log(n2)
-//         next = nilai1 + n2;
-//         nilai1 = n2
-//         n2 = next
-//     }
-// }
+function tes(){
+    let nilai1 = 1, n2 = 2, next;
+    for(let i = 0; i < 2; i++){
+        // teks += nilai1
+        console.log(n2)
+        next = nilai1 + n2;
+        nilai1 = n2
+        n2 = next
+    }
+}
 
 // tes()
 //console.log(cek([4,3,44444444,55555555,234444444444444, 89897778]))
