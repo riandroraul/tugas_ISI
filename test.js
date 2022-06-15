@@ -15,4 +15,4 @@ function tambahBintang(num, long){
     }
 }
 
-tambahBintang([5,523424,5,2342345,22345], 8)
+tambahBintang([5,523424,5,2342345,22345], 9)

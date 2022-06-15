@@ -136,7 +136,7 @@ function fibo(max){
 }
 
 function fibo2(max){
-    let nilai1 = 1, nilai2 = 2, next;
+    let nilai1 = 1, nilai2 = 2, next
     let teks = ''
     for(let i = 1; i < max; i++){
             if(i == 1){
@@ -149,7 +149,28 @@ function fibo2(max){
         nilai1 = nilai2
         nilai2 = next
     }
+    console.log(next)
 }
+// i == 1 < 6 true
+// cek i == 1 = true, concat teks dengan i cetak teks =  1
+// nilai1 = 1 concat string teks dengan nilai1 =         11
+// next = 3 nilai1 = 2 nilai2 = 3 
+// i == 2 < 6 true 
+// teks concat dengan nilai1 == 2 lalu    cetak teks     112
+// next = 5 nilai1 = 3 nilai2 = 5
+// i == 3 < 6 true
+// teks concat dengan nilai1 = 3 lalu cetak teks         1123
+// next = 8, nilai1 = 5, nilai2 = 8
+// i == 4 < 6 true
+// teks concat dengan nilai1 = 5 lalu cetak teks         11235
+// next = 13 nilai1 = 8, nilai2 = 13
+// i == 5 < 6 true
+// teks concat dengan nilai1 = 8 lalu cetak teks         112358
+// next = 21 nilai1 = 13,  nilai2 = 21
+// i == 6 < 6 false
+
+fibo2(6)
+
 // function tes(){
 //     let nilai1 = 1, n2 = 2, next;
 //     for(let i = 0; i < 2; i++){
@@ -162,8 +183,6 @@ function fibo2(max){
 // }
 
 // tes()
-fibo2(6)
-// fibo2(6)
 //console.log(cek([4,3,44444444,55555555,234444444444444, 89897778]))
 // console.log(cek([1,12,123,1234,12345,123456,1234567]))
 // console.log(star([1,12,123,1234,12345,123456,1234567], 5))
