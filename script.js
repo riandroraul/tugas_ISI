@@ -102,7 +102,7 @@ function bintangMenurun(max){
     }
 }
 
-// bintangMenurun(4)
+bintangMenurun(4)
 
 function bintangRataKanan(max){
     let teks = '';
