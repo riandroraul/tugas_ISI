@@ -25,7 +25,6 @@ function cek(arr){
         if(arr[index].toString().length > max){
             max = arr[index].toString().length
         }
-       
     }
     // return text
     return max

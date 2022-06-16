@@ -52,8 +52,8 @@ function table2(arr, max){
     }
     console.log(teks += '+')
     // let all = []
-    // for(let i = 0; i < arr.length / max; i++){
-    //     all.push(tambahBintang(arr, max).splice(i, max))
+    // for(let i = 0; i < max; i++){
+    //     all.push(tambahBintang(arr, max).slice(i, i +max))
     // }
     // console.log(all)
     // console.log(arr.length)
@@ -65,11 +65,10 @@ function table2(arr, max){
       
         console.log('|'+arr2.join('|').toString()+'|')
     let teks2 = ''
-    for(let i = 0; i < max; i++){
+    for(let i = 0; i < arr2.length; i++){
         teks2 += equal(max)
     }
     console.log(teks2+'+')
 }
 
-table2([345,5234,5,2342,2345,1222,1080,4234,3434,34,0,4,4,9090], 4)
-console.log(Array.isArray(tambahBintang([98,34,4,34,34, 7])))
+table2([345,5234,5,2342,2345,1222,1080,4234,3434,34,0,4,4,9090], 8)
