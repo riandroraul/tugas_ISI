@@ -65,10 +65,11 @@ function table2(arr, max){
       
         console.log('|'+arr2.join('|').toString()+'|')
     let teks2 = ''
-    for(let i = 0; i < arr2.length; i++){
+    for(let i = 0; i < max; i++){
         teks2 += equal(max)
     }
     console.log(teks2+'+')
 }
 
-table2([345,5234,5,2342,2345,12232,1080,4234,3434,34,0,4,4,9090,999,4,334,34,34545,4452,234,5656,6546,4,55], 8)
+table2([345,5234,5,2342,2345,1222,1080,4234,3434,34,0,4,4,9090], 4)
+console.log(Array.isArray(tambahBintang([98,34,4,34,34, 7])))
