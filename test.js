@@ -18,17 +18,30 @@ function equal(max){
     for(let i = 0; i < max; i++){
         teks += '='
     }
-    teks += '+'
+    // teks += '+'
     return teks
 }
 
 //  console.log(equal(8))
 
 function table(arr, max){
-    for(let i = 0; i < max - arr.length; i++){
-        console.log(equal(max))
+    let teks = ''
+    for(let i = 0; i < max; i++){
+        teks += equal(max)
     }
-    console.log(tambahBintang(arr, max))
+    console.log(teks += '+')
+    let arr1 = tambahBintang(arr, max).slice(0, max)
+    let arr2 = tambahBintang(arr, max).slice(max)
+
+        console.log('|'+arr1.join('|').toString()+'|')
+        console.log(teks)
+      
+        console.log('|'+arr2.join('|').toString()+'|')
+    let teks2 = ''
+    for(let i = 0; i < arr2.length; i++){
+        teks2 += equal(max)
+    }
+    console.log(teks2+'+')
 }
 
-table([345,523424,5,2342345,22345], 8)
+table([345,5234,5,2342,2345,12232,1080,4234,3434,34,0,4,4,9090,90,999,4,334,45,454], 8)
