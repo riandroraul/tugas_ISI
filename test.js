@@ -43,5 +43,32 @@ function table(arr, max){
     }
     console.log(teks2+'+')
 }
+// table([345,5234,5,2342,2345,12232,1080,4234,3434,34,0,4,4,9090,999,4,334], 9)
 
-table([345,5234,5,2342,2345,12232,1080,4234,3434,34,0,4,4,9090,90,999,4,334,45,454], 8)
+function table2(arr, max){
+    let teks = ''
+    for(let i = 0; i < max; i++){
+        teks += equal(max)
+    }
+    console.log(teks += '+')
+    // let all = []
+    // for(let i = 0; i < arr.length / max; i++){
+    //     all.push(tambahBintang(arr, max).splice(i, max))
+    // }
+    // console.log(all)
+    // console.log(arr.length)
+    let arr1 = tambahBintang(arr, max).slice(0, max)
+    let arr2 = tambahBintang(arr, max).slice(max)
+
+        console.log('|'+arr1.join('|').toString()+'|')
+        console.log(teks)
+      
+        console.log('|'+arr2.join('|').toString()+'|')
+    let teks2 = ''
+    for(let i = 0; i < arr2.length; i++){
+        teks2 += equal(max)
+    }
+    console.log(teks2+'+')
+}
+
+table2([345,5234,5,2342,2345,12232,1080,4234,3434,34,0,4,4,9090,999,4,334,34,34545,4452,234,5656,6546,4,55], 8)
