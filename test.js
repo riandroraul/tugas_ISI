@@ -52,18 +52,27 @@ function table(arr, max){
     teks += '+'
     teks += '\n'
     teks += '|'
-    for(let i = 0; i < max; i++){
-        teks += equal(longEl)
-    }
     for(let i = 0; i < lengthArray; i++){
-    teks += tambahBintang(arr, longEl).join('|')
-        if(lengthArray % max == 0){
+        if ((i + 1 % max == 0)){
             teks += '\n'
         }
     }
+    teks += tambahBintang(arr, longEl).join('|')
+    teks += '\n'
+    for(let i = 0; i < max; i++){
+        teks += equal(longEl)
+    }
+    teks += '+'
+    teks += '\n'
+
+    // for (let i = 0; i < lengthArray % max; i++){
+    //     for(let j = 0; j < longEl; j++){
+            teks += equal(longEl)
+    //     }
+    // }
     console.log(teks)
 }
-table([345,5234,5,2342,2345,3451223342,1080,4234,3434,34,0,4,4,9090,999,4,334], 8)
+table([345,5234,5,2342,2345,3451223342,1080,4234,3434,34,0], 8)
 
 function table2(arr, max){
     let teks = ''
