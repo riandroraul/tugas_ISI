@@ -5,7 +5,7 @@ function tambahBintang(num, long){
         for(let i = 0; i < long - num[j].toString().length ; i++){
             text += '*'
         }
-        arr.push(text + num[j])
+      arr.push(text + num[j])
     }
     return arr;
 }
@@ -72,7 +72,7 @@ function table(arr, max){
     // }
     console.log(teks)
 }
-table([345,5234,5,2342,2345,3451223342,1080,4234,3434,34,0], 8)
+table([345,5234,5,2342,2345,3451223342,1080,4234,3434,34,0], 5)
 
 function table2(arr, max){
     let teks = ''
