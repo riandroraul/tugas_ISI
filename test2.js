@@ -12,7 +12,7 @@ function table(arr, max) {
     }
 
     teks += "\n"
-    arr.forEach( function(el, index) {
+    arr.forEach(function(el, index) {
         // el => tiap2 elemen pada array (number)
         teks += "|"
         for (let i = 0; i < longEl - el.toString().length; i++) {
@@ -48,4 +48,4 @@ function table(arr, max) {
 }
 
 
-console.log(table([1090092, 79996, 7655, 777, 876, 8866, 97, 788, 89, 9, 888839, 8882, 88, 234, 234, 4, 23434, 23423, 3900453223, 3900453239, 3900453299, 234234, 2342], 6));
+console.log(table([1090092, 79996, 7655, 777, 876, 8866, 97, 788, 89, 9, 888839, 8882, 88, 234, 234, 4, 23434, 23423, 39004553223, 3900453239, 3900453299, 234234, 2342], 5));

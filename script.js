@@ -94,29 +94,30 @@ function bintangMenurun(max){
     for(let x = 0; x < max; x++){
         teks += '*'
     }
-    for(let j = 0; j < max; j++){
+    //for(let j = 0; j < max; j++){
         console.log(teks)
-        teks = teks.slice(0, -1)
-    }
+      //  teks = teks.slice(0, -1)
+    //}
 }
 
-// bintangMenurun(4)
+ bintangMenurun(4)
 
 function bintangRataKanan(max){
     let teks = '';
     let teks2 = '';
     for(let x = 0; x < max; x++){
         teks += ' '
-    }
-    for(let j = 0; j < max; j++){
-        teks2 += '*';
-        // console.log(teks)
-        console.log(teks + teks2)
-        teks = teks.slice(0, -1)
+        for(let j = 0; j < x; j++){
+            teks2 += '*';
+            // console.log(teks)
+            console.log(teks + teks2)
+            teks = teks.slice(0, -1)
+            teks2 += '\n'
+        }
     }
 }
 
-// bintangRataKanan(4)
+//bintangRataKanan(4)
 
 function fibo(max){
     let teks = ''
@@ -165,7 +166,7 @@ function fibo2(max){
 // next = 21 nilai1 = 13,  nilai2 = 21
 // i == 6 < 6 false
 
-fibo2(10)
+// fibo2(10)
 
 function tes(){
     let nilai1 = 1, n2 = 2, next;
