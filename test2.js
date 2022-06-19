@@ -3,45 +3,45 @@ function tableDynamic(arraySatu, val) {
     const panjang = `${hasilMax}`.length
     const panjangArray = arraySatu.length; 
     const akhirTable = Math.floor(panjangArray / val); 
-    let a = "+";
+    let teks = "+";
     let f = val; 
     for (let i = 0; i < val; i++) {
         for (let s = 0; s < panjang; s++) {
-             a += "="; 
+             teks += "="; 
         } 
-        a += "+";
+        teks += "+";
     }
 
-    a += "\n"
+    teks += "\n"
     arraySatu.forEach(function (x, y) {
-        a += "|"
-        for (let l = 0; l < panjang - `${x}`.length; l++) {
-            a += "*";
+    teks += "|"
+    for (let l = 0; l < panjang - `${x}`.length; l++) {
+        teks += "*";
         }
-        a += `${x}`;
+        teks += `${x}`;
         if ((y + 1) % val == 0) {
-            a += "|"
-            a += "\n";
+            teks += "|"
+            teks += "\n";
             for (let i = 0; i < f; i++) {
-                a += "+";
+                teks += "+";
                 for (let j = 0; j < panjang; j++) {
-                    a += "=";
+                    teks += "=";
                 }
             }
-            a += "+";
-            a += "\n";
+            teks += "+";
+            teks += "\n";
         }
     });
-    a += "|"                                                          
-    a += "\n"                                                         
+    teks += "|"                                                          
+    teks += "\n"                                                         
     for (let i = 0; i < panjangArray % val; i++) {
-        a += "+";
+        teks += "+";
         for (let s = 0; s < panjang; s++) {
-            a += "=";
+            teks += "=";
         }
     }
-    a += "+";
-    return a;
+    teks += "+";
+    return teks;
 }
 
 
