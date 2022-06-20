@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-function tableDynamic(arraySatu, val) {
-    const hasilMax = Math.max.apply(null, arraySatu); 
-    const panjang = `${hasilMax}`.length
-    const panjangArray = arraySatu.length; 
-    const akhirTable = Math.floor(panjangArray / val); 
-    let teks = "+";
-    let f = val; 
-    for (let i = 0; i < val; i++) {
-        for (let s = 0; s < panjang; s++) {
-             teks += "="; 
-        } 
-=======
 function table(arr, max) {
     let nilaiMax = Math.max.apply(undefined, arr); // nilai max dari tiap2 elemen arr (number)
     let longEl = nilaiMax.toString().length; // elemen yang paling panjang pada arr (string)
@@ -21,25 +8,10 @@ function table(arr, max) {
         for (let j = 0; j < longEl; j++) {
              teks += "="; 
         }
->>>>>>> 83f159260b46bac3e35027e9fa58137b363d1b20
         teks += "+";
     }
 
     teks += "\n"
-<<<<<<< HEAD
-    arraySatu.forEach(function (x, y) {
-    teks += "|"
-    for (let l = 0; l < panjang - `${x}`.length; l++) {
-        teks += "*";
-        }
-        teks += `${x}`;
-        if ((y + 1) % val == 0) {
-            teks += "|"
-            teks += "\n";
-            for (let i = 0; i < f; i++) {
-                teks += "+";
-                for (let j = 0; j < panjang; j++) {
-=======
     arr.forEach(function(el, index) {
         // el => tiap2 elemen pada array (number)
         teks += "|"
@@ -53,7 +25,6 @@ function table(arr, max) {
             for (let i = 0; i < max; i++) {
                 teks += "+";
                 for (let j = 0; j < longEl; j++) {
->>>>>>> 83f159260b46bac3e35027e9fa58137b363d1b20
                     teks += "=";
                 }
             }
@@ -61,30 +32,18 @@ function table(arr, max) {
             teks += "\n";
         }
     });
-<<<<<<< HEAD
-    teks += "|"                                                          
-    teks += "\n"                                                         
-    for (let i = 0; i < panjangArray % val; i++) {
-        teks += "+";
-        for (let s = 0; s < panjang; s++) {
-=======
+
     teks += "|"; 
     teks += "\n";
     // console.log(lengthArray % max)
     for (let i = 0; i < lengthArray % max; i++) {
         teks += "+";
         for (let j = 0; j < longEl; j++) {
->>>>>>> 83f159260b46bac3e35027e9fa58137b363d1b20
             teks += "=";
         }
     }
     teks += "+";
     return teks;
-<<<<<<< HEAD
-=======
-    // console.log(nilaiMax)
-    // return lengthArray
->>>>>>> 83f159260b46bac3e35027e9fa58137b363d1b20
 }
 
 
