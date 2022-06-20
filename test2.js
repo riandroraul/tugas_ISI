@@ -35,13 +35,13 @@ function table(arr, max) {
 
     teks += "|"; 
     teks += "\n";
-    // console.log(lengthArray % max)
     for (let i = 0; i < lengthArray % max; i++) {
         teks += "+";
         for (let j = 0; j < longEl; j++) {
             teks += "=";
         }
     }
+    lengthArray % max == 0 ? teks = teks.slice(0, -2) : teks;
     teks += "+";
     return teks;
 }
