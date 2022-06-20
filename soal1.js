@@ -60,6 +60,7 @@ function table(arr, max){
     if((i + 1) % max == 0){
       teks += '\n'
       teks += equal(lengthMax, max);
+      
       teks += '\n|'
       // i % max == 0 ? teks += '\n' : teks += '\n|'
     } 
