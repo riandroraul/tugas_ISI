@@ -1,5 +1,5 @@
 function table(arr, max) {
-    let nilaiMax = Math.max.apply(undefined, arr); // nilai max dari tiap2 elemen arr (number)
+    let nilaiMax = Math.max.apply(undefined, arr); // nilai max dari tiap tiap elemen arr (number)
     let longEl = nilaiMax.toString().length; // elemen yang paling panjang pada arr (string)
     let lengthArray = arr.length; // panjang array
     // const lastTable = Math.floor(lengthArray / max); 
