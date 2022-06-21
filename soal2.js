@@ -10,15 +10,18 @@
 // d. Incomplete hill or valley at the first and the last block, still can be used to build a 
 // castle(considered as hill or valley)
 // e. Your function just need to count, no need to draw.
+
+
 function hillOrValley(arr){
     var count = 0;
     for(var i = 0; i < arr.length; i++){
+        // [3, -1, -5, -5, 2,4,7,5,1,1,1,4]
         if(i == 0){
-            if(arr[i] > arr[i+1]){
-                count++;
+            if(arr[i] > arr[i+1]){ // jika index saat ini lebih besar dari index selanjutnya 
+                count++;           // count + 1
             }
         }
-        else if(i == arr.length-1){
+        else if(arr[i] == arr[arr.length-1]){ // jika nilai array index ke i sama dengan nilai array index terakhir
             if(arr[i] > arr[i-1]){
                 count++;
             }
@@ -32,5 +35,5 @@ function hillOrValley(arr){
     return count;
 }
 
-console.log(hillOrValley([12,2,3,4,5,6,7,8,9,10]));
+console.log(hillOrValley([3,-1,-5,-5,2,4,7,5,1,1,1,4]));
 

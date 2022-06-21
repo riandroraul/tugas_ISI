@@ -40,12 +40,12 @@ function longElement(arr){
           }
       }
   }
-  return nilaiMax
+  return nilaiMax // number
 }
 
-// +=====+=====+=====+
-// |**343|*9898|****8|
-// +=====+=====+=====+
+// +=====+=====+=====+=====+=====+=====+
+// |**343|*9898|****8|**343|*9898|****8|
+// +=====+=====+=====+=====+=====+=====+
 
 function table(arr, max){
   let teks = ''
@@ -60,33 +60,32 @@ function table(arr, max){
     if((i + 1) % max == 0){
       teks += '\n'
       teks += equal(lengthMax, max);
-      
       teks += '\n|'
-      // i % max == 0 ? teks += '\n' : teks += '\n|'
-    } 
+    }
   }
   let sisa = arr.length % max
-  sisa > 0 ? teks += '\n' + equal(lengthMax, sisa) : teks = teks.slice(0 ,-2)
+  sisa > 0 ? teks += '\n' + equal(lengthMax, sisa) : teks = teks.slice(0, -2)
   console.log(teks)
 }
 
 
 
-table([12, 79996, 7655, 777, 989, 876, 8866, 97, 788, 89, 9, 888839, 8882, 88, 234, 234,4,23434,23423,3458932348787,345893234878734, 987987897987997989, 234234,2342], 3)
+table([12, 79996, 7655, 777, 989, 876, 8866, 97, 788, 89, 9, 888839, 8882, 88, 234, 234,4,23434,23423, 3458932348787,345893234878734, 987984547897987997989, 234234,2342],6)
 
-// console.log(tambahBintang([23,232,322332332,2323222343,3434,3434,343,4334,3434,3434,343], 5))
+// console.log(tambahBintang([23,232,322332332,2323222343,3434,3434,343,4334,3434,3434,343],5))
 
 // console.log('asdfsdf')
 //  console.log(equal(9))
 
 
-
+// let str = '    ASDDA\nSadads      '
+// console.log(str.trim())
 
 
 
 // table([345,5234,5,2342,2345,3451278798723342,1080,4234,3434,34,0], 5)
 // function table2(arr, max){
-//   let teks = ''
+//   let array = ''
 //   for(let i = 0; i < max; i++){
 //       teks += equal(max)
 //   }

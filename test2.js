@@ -41,7 +41,7 @@ function table(arr, max) {
             teks += "=";
         }
     }
-    lengthArray % max == 0 ? teks = teks.slice(0, -2) : teks;
+    lengthArray % max == 0 ? teks = teks.slice(0, -4) : teks
     teks += "+";
     return teks;
 }
