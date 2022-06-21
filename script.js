@@ -94,10 +94,10 @@ function bintangMenurun(max){
     for(let x = 0; x < max; x++){
         teks += '*'
     }
-    //for(let j = 0; j < max; j++){
+    for(let j = 0; j < max; j++){
         console.log(teks)
-      //  teks = teks.slice(0, -1)
-    //}
+       teks = teks.slice(0, -1)
+    }
 }
 
  bintangMenurun(4)
@@ -109,7 +109,7 @@ function bintangRataKanan(max){
         teks += ' '
         for(let j = 0; j < x; j++){
             teks2 += '*';
-            // console.log(teks)
+            console.log(teks)
             console.log(teks + teks2)
             teks = teks.slice(0, -1)
             teks2 += '\n'
@@ -117,7 +117,7 @@ function bintangRataKanan(max){
     }
 }
 
-//bintangRataKanan(4)
+// bintangRataKanan(4)
 
 function fibo(max){
     let teks = ''
@@ -182,7 +182,7 @@ function tes(){
 //console.log(cek([4,3,44444444,55555555,234444444444444, 89897778]))
 // console.log(cek([1,12,123,1234,12345,123456,1234567]))
 // console.log(star([1,12,123,1234,12345,123456,1234567], 5))
-tambahBintang([1, 12,123,4545,54,544545454,454545], 7)
+// tambahBintang([1, 12,123,4545,54,544545454,454545], 7)
 //console.log(equal(6))
 
 // console.log(star(78887, 6));
