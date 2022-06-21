@@ -74,12 +74,7 @@ table([12, 79996, 7655, 777, 989, 876, 8866, 97, 788, 89, 9, 888839, 8882, 88, 2
 
 // console.log(tambahBintang([23,232,322332332,2323222343,3434,3434,343,4334,3434,3434,343],5))
 
-// console.log('asdfsdf')
 //  console.log(equal(9))
-
-
-// let str = '    ASDDA\nSadads      '
-// console.log(str.trim())
 
 
 
