@@ -19,19 +19,19 @@ function hillOrValley(arr){
         if(i == 0){
             if(arr[i] > arr[i+1]){      // jika index saat ini lebih besar dari index selanjutnya 
                 count++;                // count + 1
-                console.log(count, i)
+                // console.log(count, i)
             }
         }
         else if(arr[i] == arr[arr.length - 1]){ // jika nilai array index ke i sama dengan nilai array index terakhir
             if(arr[i] > arr[i-1]){
                 count++;
-                console.log(count, i)
+                // console.log(count, i)
             }
         }
         else{
             if(arr[i] > arr[i+1] && arr[i] < arr[i-1]){
                 count++;
-                console.log(count, i)
+                // console.log(count, i)
             }
         }
     }
