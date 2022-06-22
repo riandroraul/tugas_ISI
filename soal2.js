@@ -23,10 +23,13 @@ function hillOrValley(arr){
             }
         }
         else if(arr[i] == arr[arr.length - 1]){     // jika nilai array index ke i sama dengan nilai array index terakhir
-            if(arr[i] > arr[i-1]){
-                count++;
-                console.log(count, i)       //index ke 5 dan ke 11 count
-            }
+            // for(let j = arr[i]; j > 0; j--){
+                if(arr[i] > arr[i-1]){
+                    count++;
+                    console.log(count, i)       //  // index ke 5 dari belakang dan ke 11 count
+                }
+            // }
+            
         }
         else{
             if(arr[i] == arr[i+1] && arr[i] < arr[i-1]){
@@ -43,3 +46,12 @@ function hillOrValley(arr){
 }
 
 console.log(hillOrValley([3,-1,-5,-5,2,4,7,5,1,1,1,4]));
+
+/*
+1 0
+2 2
+3 5
+4 8
+5 11
+5
+*/
