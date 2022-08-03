@@ -18,28 +18,24 @@ function hillOrValley(arr){
         // [3, -1, -5, -5, 2,4,7,5,1,1,1,4]
         if(i == 0 || i == arr.length - 1){
                 count++;                  // count + 1
-                console.log(count, i)     // index ke 0 dan terakhir count
+                // console.log(count, i)     // index ke 0 dan terakhir count
         }
-        else if(arr[i] > arr[i-1] && arr[i] > arr[i+1]){
+        else if(arr[i] > arr[i-1] && arr[i] >= arr[i+1]){
             count++;
-            console.log(count, i)           // index ke 6 count
+            // console.log(count, i)           // index ke 6 count
         }
         else{
             if(arr[i] <= arr[i+1] && arr[i] < arr[i-1]){ // valley
                 count++;
-                console.log(count, i) // index ke 2 dan ke 8 count
+                // console.log(count, i) // index ke 2 dan ke 8 count
             }
-        //     // else if(arr[i] < arr[i+1] && arr[i] > arr[i-1]){
-        //     //     count++;
-        //     //     console.log(count, i)
-        //     // }
         }
     }
     // console.log(arr[arr.length-1])
     return count;
 }
 
-console.log(hillOrValley([3,-1,-5,-5,2,4,7,5,1,1,1,4,7,1]));
+console.log(hillOrValley([3,-1,-5,-5,2,4,7,7,5,1,1,1,4]));
 /*
 1 0
 2 2
